@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint", // Linting
+        "esbenp.prettier-vscode", // Formattig
+        "redhat.vscode-yaml", // YAML validation & intellisense
+        "ZixuanChen.vitest-explorer" // Jest test explorer
+    ]
+}
