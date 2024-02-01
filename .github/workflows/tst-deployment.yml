@@ -1,0 +1,27 @@
+name: Tst Deployment
+on:
+    push:
+        branches:
+            - tst
+    workflow_dispatch:
+    workflow_call:
+concurrency:
+    group: tst_deployment
+permissions:
+    contents: read # This is required for actions/checkout
+    id-token: write
+    packages: read # Required for Backoffice-Tool-Library
+jobs:
+    tst-deployment:
+        runs-on: ubuntu-latest
+        environment: tst
+        steps:
+            - id: aws_deployment
+              uses: bonprix/backoffice-aws-deployment@v1
+              with:
+                  arn-deploy-role: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+                  arn-aws-notification: ${{ secrets.AWS_NOTIFICATION_ARN }}
+                  token: ${{ secrets.REPO_ACCESS_PAT }}
+                  build-mode: ${{ vars.AWS_DEPLOY_BUILD_MODE}}
+                  tool-name: ${{ vars.AWS_DEPLOY_TOOL_NAME}}
+                  domain-prefix: ${{ vars.AWS_DEPLOY_TOOL_DOMAIN_PREFIX}}

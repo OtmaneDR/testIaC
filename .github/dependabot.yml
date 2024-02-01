@@ -1,0 +1,30 @@
+version: 2
+registries:
+    npm-github:
+        type: npm-registry
+        url: https://npm.pkg.github.com
+        token: ${{ secrets.DEPENDABOT_TOKEN }}
+updates:
+    - package-ecosystem: "github-actions"
+      directory: "/"
+      schedule:
+          interval: "weekly"
+          time: "05:00"
+          timezone: "Europe/Berlin"
+      commit-message:
+          prefix: "build(deps): "
+      open-pull-requests-limit: 50
+    - package-ecosystem: "npm"
+      directory: "/"
+      registries:
+          - npm-github
+      ignore:
+          - dependency-name: "*"
+            update-types: ["version-update:semver-major"]
+      schedule:
+          interval: "weekly"
+          time: "05:00"
+          timezone: "Europe/Berlin"
+      commit-message:
+          prefix: "build(deps): "
+      open-pull-requests-limit: 50

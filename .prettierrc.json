@@ -1,0 +1,12 @@
+{
+    "printWidth": 120,
+    "importOrder": [
+        "<THIRD_PARTY_MODULES>",
+        "^@bonprix/backoffice-tool-library",
+        "^@?(data/|locales/|pages/|/|(\\.)|(\\./)|(\\.\\./))(.*)$"
+    ],
+    "importOrderSeparation": true,
+    "importOrderGroupNamespaceSpecifiers": true,
+    "importOrderSortSpecifiers": true,
+    "tabWidth": 4
+}

@@ -1,0 +1,47 @@
+{
+    "hello": "Hallo {{name}}",
+    "errorMsg": {
+        "default": {
+            "400": "Die Eingabe kann vom Server nicht korrekt verarbeitet werden. Bitte überprüfen Sie das Format Ihrer Eingabe.",
+            "401": "Der Benutzername und das Passwort sind nicht korrekt. Bitte melden Sie sich erneut an.",
+            "404": "Die Suche ergab keine Treffer. Bitte überprüfen Sie Ihre Eingabe.",
+            "500": "Es ist ein interner Fehler auf dem Server aufgetreteten. Bitte wiederholen Sie den Vorgang.",
+            "502": "Es ist ein Fehler beim Weiterleiten der Anfrage an den Dienst aufgetreten. Bitte wiederholen Sie den Vorgang.",
+            "defaultHeader": "Unbekannter Fehler",
+            "defaultHeader2": "Fehler",
+            "defaultHeaderSuccess": "Erfolg",
+            "default": "Es ist ein unbekannter Fehler aufgetreten: {{message}}",
+            "unknownCode": "Ein unbekannter Fehler ist aufgetreten: {{statusCode}}. Bitte übermitteln Sie diese Fehlermeldung an das Backoffice-Team.",
+            "timeout": "Die Anfrage wurde abgebrochen, weil sie zu viel Zeit in Anspruch genommen hat. Bitte starten Sie die Aktion erneut."
+        }
+    },
+    "actions": {
+        "edit": "Bearbeiten",
+        "close": "Schließen",
+        "save": "Speichern",
+        "cancel": "Abbrechen",
+        "delete": "Löschen",
+        "export": "Exportieren",
+        "import": "Importieren",
+        "search": "Suchen",
+        "discard": "Verwerfen",
+        "start": "Starten"
+    },
+    "general": {
+        "backoffice": "Backoffice",
+        "bonprixBackoffice": "Bonprix Backoffice",
+        "yes": "Ja",
+        "no": "Nein",
+        "itemNumber": "Artikelnummer",
+        "itemOptionId": "Item-Option-ID",
+        "styleId": "Style-ID",
+        "styleNumber": "Stylenummer",
+        "styleName": "Stylename"
+    },
+    "languages": {
+        "germanCode": "de",
+        "englishCode": "en",
+        "german": "Deutsch",
+        "english": "Englisch"
+    }
+}

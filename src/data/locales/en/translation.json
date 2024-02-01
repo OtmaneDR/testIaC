@@ -1,0 +1,47 @@
+{
+    "hello": "Hello {{name}}",
+    "errorMsg": {
+        "default": {
+            "400": "The input cannot be processed correctly by the server. Please check the format of your input.",
+            "401": "The username and the password are not correct. Please sign in again.",
+            "404": "The search returned no results. Please check your input.",
+            "500": "It is an internal error on the server. Please repeat the process.",
+            "502": "There was an error when forwarding the request to the service. Please repeat the action.",
+            "defaultHeader": "Unknown error",
+            "defaultHeader2": "Error",
+            "defaultHeaderSuccess": "Success",
+            "default": "An unknown mistake occurred: {{message}}",
+            "unknownCode": "An unknown mistake occurred: {{statusCode}}. Please send this error message to the Backoffice team.",
+            "timeout": "The request was canceled because it took too long. Please start the action again."
+        }
+    },
+    "actions": {
+        "edit": "Edit",
+        "close": "Close",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "export": "Export",
+        "import": "Import",
+        "search": "Search",
+        "discard": "Discard",
+        "start": "Start"
+    },
+    "general": {
+        "backoffice": "Backoffice",
+        "bonprixBackoffice": "Bonprix Backoffice",
+        "yes": "Yes",
+        "no": "No",
+        "itemNumber": "Item number",
+        "itemOptionId": "Item option ID",
+        "styleId": "Style ID",
+        "styleNumber": "Style number",
+        "styleName": "Style name"
+    },
+    "languages": {
+        "germanCode": "de",
+        "englishCode": "en",
+        "german": "German",
+        "english": "English"
+    }
+}
